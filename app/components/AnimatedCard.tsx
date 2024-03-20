@@ -1,5 +1,5 @@
 import React from "react";
-import { PinContainer } from "./ui/3dPin";
+import { PinContainer } from "./ui/3d-pin";
 
 interface AnimatedPinDemoProps {
     title: string;
