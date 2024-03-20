@@ -3,7 +3,7 @@ import React from "react";
 export const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-6 py-5 bg-zinc-900 text-white">
-      <div className="text-xl">Remix-Acertenity</div>
+      <div className="text-xl">Remix-Aceternity</div>
       <div>
         <a
           href="https://github.com"

@@ -6,6 +6,12 @@ import { Navbar } from "~/components/Navbar";
 import { Header, HeroParallax } from "~/components/ui/hero-parralel";
 import { SparklesCore } from "~/components/ui/sparkles";
 
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Remix-Aceternity" },
+    { name: "description", content: "Welcome to Remix-Acertenity" },
+  ];
+};
 
 export default function Index() {
   

@@ -2,12 +2,7 @@ import { MetaFunction } from "@remix-run/node";
 import { AnimatedPinDemo } from "~/components/AnimatedCard";
 import { SparklesCore } from "~/components/ui/sparkles";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
+
 
 // Example card data
 const cards = [
@@ -18,24 +13,23 @@ const cards = [
 
 export default function Index() {
   return (
-    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden">
-      <div className="w-full absolute inset-0">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-      </div>
-      <div className="z-10 text-center">
+    <div className="flex flex-col min-h-screen w-full overflow-hidden">
+      {/* Ensure SparklesCore covers the entire page */}
+      <SparklesCore
+        id="tsparticlesfullpage"
+        background="transparent"
+        minSize={0.6}
+        maxSize={1.4}
+        particleDensity={100}
+        className="absolute inset-0 w-full h-full z-10"
+        particleColor="#FFFFFF"
+      />
+      {/* Content container */}
+      <div className="z-10 flex flex-col items-center justify-center flex-grow text-center">
         <h1 className="text-7xl md:text-7xl lg:text-6xl font-bold text-white m-12">
-          Remix Acertenity Starter
+          Discover More
         </h1>
-        {/* Adjust the container here to align cards horizontally */}
-        <div className="flex justify-center items-center gap-10">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10">
           {cards.map((card) => (
             <AnimatedPinDemo key={card.id} title={card.title} description={card.description} />
           ))}
@@ -44,3 +38,4 @@ export default function Index() {
     </div>
   );
 }
+
