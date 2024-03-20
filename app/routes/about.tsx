@@ -1,5 +1,6 @@
 import { MetaFunction } from "@remix-run/node";
 import { AnimatedPinDemo } from "~/components/AnimatedCard";
+import { FloatingNavDemo } from "~/components/NavbarDemo";
 import { SparklesCore } from "~/components/ui/sparkles";
 
 
@@ -15,6 +16,7 @@ export default function Index() {
   return (
     <div className="flex flex-col min-h-screen w-full overflow-hidden">
       {/* Ensure SparklesCore covers the entire page */}
+      <FloatingNavDemo/>
       <SparklesCore
         id="tsparticlesfullpage"
         background="transparent"

@@ -2,6 +2,7 @@ import { MetaFunction } from "@remix-run/node";
 import { AnimatedPinDemo } from "~/components/AnimatedCard";
 import { HeroParallaxDemo } from "~/components/HeroParallel";
 import { Navbar } from "~/components/Navbar";
+import { FloatingNavDemo } from "~/components/NavbarDemo";
 //import { products } from "~/components/HeroParallel";
 import { Header, HeroParallax } from "~/components/ui/hero-parralel";
 import { SparklesCore } from "~/components/ui/sparkles";
@@ -18,6 +19,7 @@ export default function Index() {
   return (
     <div>
       <Navbar />
+      <FloatingNavDemo/>
       <HeroParallaxDemo/>
     </div>
   );
