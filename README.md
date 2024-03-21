@@ -1,36 +1,15 @@
-# Welcome to Remix + Vite!
+# Welcome to Remix + Vite + Aceternity UI !
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
+<img width="1496" alt="image" src="https://github.com/LinaMahrouch/Remix-Aceternity-Starter/assets/109791074/ae40803b-5921-4ad8-9152-eb36bd01a6c9">
 
 ## Development
-
-Run the Vite dev server:
-
-```shellscript
-npm run dev
-```
-
-## Deployment
-
-First, build your app for production:
-
 ```sh
-npm run build
+git clone https://github.com/LinaMahrouch/Remix-Aceternity-Starter.git
+npm install
+npm run dev 
 ```
 
-Then run the app in production mode:
+## Docs
+📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
 
-```sh
-npm start
-```
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
