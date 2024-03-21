@@ -1,4 +1,4 @@
-import { PinContainer } from "./ui/3d-pin";
+import { PinContainer } from "./3d-pin";
 interface AnimatedPinDemoProps {
   title: string;
   description: string;

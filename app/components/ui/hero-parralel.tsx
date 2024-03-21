@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform, useSpring, MotionValue } from "framer-motion";
 import { Link } from "@remix-run/react"; // Import from Remix
+import { TailwindButton } from "./tailwind-button";
 
 export const HeroParallax = ({
   products,
@@ -95,16 +96,20 @@ export const HeroParallax = ({
   
   export const Header = () => {
     return (
-      <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+      <div className="max-w-7xl relative mx-auto py-20 md:py-32 px-4 w-full  left-0 top-0">
         
         <h1 className="text-2xl md:text-7xl font-bold text-white">
           Remix <br /> Aceternity UI Starter
         </h1>
         
-        <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
+        <p className="max-w-3xl text-base md:text-xl mt-4 text-neutral-200">
         Experience the magic of building stunning products and frameworks.
         Crafted with passion and expertise, each creation is designed to captivate and inspire.
         </p>
+
+       <TailwindButton
+       link="/about"
+       label="Discover More"/>
       </div>
     );
   };

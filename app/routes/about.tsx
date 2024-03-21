@@ -1,6 +1,6 @@
 import { MetaFunction } from "@remix-run/node";
-import { AnimatedPinDemo } from "~/components/AnimatedCard";
-import { FloatingNavDemo } from "~/components/NavbarDemo";
+import { AnimatedPinDemo } from "~/components/ui/animated-card";
+import { FloatingNavDemo } from "~/components/ui/navbar-demo";
 import { SparklesCore } from "~/components/ui/sparkles";
 
 
@@ -28,7 +28,7 @@ export default function Index() {
       />
       {/* Content container */}
       <div className="z-10 flex flex-col items-center justify-center flex-grow text-center">
-        <h1 className="text-7xl md:text-7xl lg:text-6xl font-bold text-white m-12">
+        <h1 className="text-7xl md:text-7xl lg:text-6xl font-bold text-white mt-12">
           Discover More
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
